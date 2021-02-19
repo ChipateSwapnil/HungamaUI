@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -12,6 +14,7 @@ import com.hungamademo.android.databinding.FragmentMainBinding
 import com.hungamademo.android.model.Bucket
 import com.hungamademo.android.model.BucketData
 import com.hungamademo.android.ui.adapter.BucketAdapter
+import com.hungamademo.android.ui.viewmodel.BucketItemViewModel
 import com.hungamademo.android.utils.JsonReaderUtils
 import com.hungamademo.android.utils.LogUtils
 
@@ -32,6 +35,7 @@ class CommonViewPagerItemFragment : Fragment() {
     private lateinit var bucketAdapter: BucketAdapter
     private lateinit var buckets: Bucket
     private lateinit var binding: FragmentMainBinding
+    private var bucketViewModel: BucketItemViewModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,22 +57,27 @@ class CommonViewPagerItemFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        bucketViewModel = ViewModelProvider(this).get(BucketItemViewModel::class.java)
         initView()
     }
 
     private fun initView() {
-        if (bottomNavigationSelected.equals(BOTTOM_ITEM_DISCOVER) && tabSelected.equals("All")) {
-            buckets = getBuckets();
-            bucketAdapter =
-                BucketAdapter(buckets.dataList as ArrayList<BucketData>, requireContext())
+        if ((bottomNavigationSelected.equals(BOTTOM_ITEM_DISCOVER) && tabSelected.equals("All")) || (bottomNavigationSelected.equals(
+                BOTTOM_ITEM_MUSIC
+            ) && tabSelected.equals("Charts"))
+        ) {
+            bucketViewModel?.getBucketData(requireContext())?.observe(this, Observer {
+                buckets = it
+                bucketAdapter =
+                    BucketAdapter(buckets.dataList as ArrayList<BucketData>, requireContext())
 
+                //set the RecyclerView for Buckets
+                binding.rvBuckets.layoutManager =
+                    LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+                binding.rvBuckets.adapter = bucketAdapter
 
-            //set the RecyclerView for Buckets
-            binding.rvBuckets.layoutManager =
-                LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            binding.rvBuckets.adapter = bucketAdapter
-
-            binding.tvTitle.visibility = View.GONE
+                binding.tvTitle.visibility = View.GONE
+            })
         } else {
             val displaytext = "$bottomNavigationSelected : $tabSelected"
             binding.tvTitle.text = displaytext

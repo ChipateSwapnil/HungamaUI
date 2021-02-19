@@ -5,7 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.hungamademo.android.R
 import com.hungamademo.android.databinding.ActivityMainBinding
-import com.hungamademo.android.ui.view.fragments.BottomNavigationItemFragment
+import com.hungamademo.android.ui.view.fragments.HomeFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     //add the dynamic tabLayout into frame layout on item position
     private fun addFragment(bottomNavSelectedTabName: String) {
-        val fragment = BottomNavigationItemFragment.newInstance(bottomNavSelectedTabName)
+        val fragment = HomeFragment.newInstance(bottomNavSelectedTabName)
         supportFragmentManager
             .beginTransaction()
             .setCustomAnimations(
