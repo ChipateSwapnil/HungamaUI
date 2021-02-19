@@ -22,7 +22,7 @@ class StatusItemHolder(var binding: LayoutStatusItemBinding, var context: Contex
 
         Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_artist))
             .circleCrop()
-            .placeholder(context.resources.getDrawable(R.drawable.ic_launcher_background))
+            .placeholder(context.resources.getDrawable(R.drawable.dummy))
             .centerCrop().into(binding.ivBucketStatusImage)
     }
 }

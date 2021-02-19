@@ -8,7 +8,7 @@ import com.hungamademo.android.base.BaseBucketItemHolder
 import com.hungamademo.android.databinding.LayoutListItemBinding
 import com.hungamademo.android.model.BucketContent
 
-class ListItemHolder(var binding: LayoutListItemBinding, var context : Context) :
+class ListItemHolder(var binding: LayoutListItemBinding, var context: Context) :
     BaseBucketItemHolder(binding) {
 
     override fun bind(bucketContent: BucketContent) {
@@ -21,6 +21,8 @@ class ListItemHolder(var binding: LayoutListItemBinding, var context : Context) 
         }
 
 
-        Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_songs)).placeholder(context.resources.getDrawable(R.drawable.ic_launcher_background)).centerCrop().into(binding.ivBucketListImage)
+        Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_songs))
+            .placeholder(context.resources.getDrawable(R.drawable.dummy)).centerCrop()
+            .into(binding.ivBucketListImage)
     }
 }

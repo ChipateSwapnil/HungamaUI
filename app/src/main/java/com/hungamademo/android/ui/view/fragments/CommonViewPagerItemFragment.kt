@@ -28,12 +28,10 @@ class CommonViewPagerItemFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var tabSelected: String? = null
     private var bottomNavigationSelected: String? = null
-
-    private lateinit var binding: FragmentMainBinding
     private val fragmentBinding get() = binding!!
-
     private lateinit var bucketAdapter: BucketAdapter
     private lateinit var buckets: Bucket
+    private lateinit var binding: FragmentMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,7 +53,10 @@ class CommonViewPagerItemFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initView()
+    }
 
+    private fun initView() {
         if (bottomNavigationSelected.equals(BOTTOM_ITEM_DISCOVER) && tabSelected.equals("All")) {
             buckets = getBuckets();
             bucketAdapter =
@@ -69,7 +70,7 @@ class CommonViewPagerItemFragment : Fragment() {
 
             binding.tvTitle.visibility = View.GONE
         } else {
-            var displaytext = "$bottomNavigationSelected : $tabSelected"
+            val displaytext = "$bottomNavigationSelected : $tabSelected"
             binding.tvTitle.text = displaytext
             binding.tvTitle.visibility = View.VISIBLE
         }

@@ -21,7 +21,7 @@ class CollectionItemHolder(var binding: LayoutCollectionItemBinding, var context
         }
 
         Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_collection))
-            .placeholder(context.resources.getDrawable(R.drawable.ic_launcher_background))
+            .placeholder(context.resources.getDrawable(R.drawable.dummy))
             .centerCrop().into(binding.ivBucketCollectionImage)
     }
 }

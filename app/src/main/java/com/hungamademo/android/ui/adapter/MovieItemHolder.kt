@@ -28,7 +28,7 @@ class MovieItemHolder(var binding: LayoutMovieItemBinding, var context: Context)
         }
 
         Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_movie))
-            .placeholder(context.resources.getDrawable(R.drawable.ic_launcher_background))
+            .placeholder(context.resources.getDrawable(R.drawable.dummy))
             .centerCrop().into(binding.ivBucketMovieImage)
     }
 }

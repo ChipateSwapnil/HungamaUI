@@ -15,7 +15,6 @@ import com.hungamademo.android.model.TabItemModel
 import com.hungamademo.android.ui.adapter.HomeViewPagerAdapter
 import com.hungamademo.android.utils.JsonReaderUtils
 import com.hungamademo.android.utils.LogUtils
-import com.hungamademo.android.utils.ToastUtil
 
 private const val ARG_BOTTOM_NAVIGATION_SELECTED = "bottomNavigationSelected"
 
@@ -24,13 +23,12 @@ class BottomNavigationItemFragment : Fragment() {
     //binding items
     private var binding: FragmentBottomNavigationItemBinding? = null
     private var tabItems: ArrayList<TabData> = arrayListOf()
-
-    // This property is only valid between onCreateView and onDestroyView
-    private val fragmentBinding get() = binding!!
-
     //viewPager
     private lateinit var homeViewPagerAdapter: HomeViewPagerAdapter
     private var bottomNavigationSelected: String = ""
+
+    // This property is only valid between onCreateView and onDestroyView
+    private val fragmentBinding get() = binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,8 +49,11 @@ class BottomNavigationItemFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        bottomNavigationSelected?.let { requireContext()?.let { it1 -> ToastUtil.showShortToast(it1, it) } }
+//        bottomNavigationSelected?.let { requireContext()?.let { it1 -> ToastUtil.showShortToast(it1, it) } }
+        setViewPager()
+    }
 
+    private fun setViewPager() {
         //set viewpager items
         tabItems = getTabItems().dataList as ArrayList<TabData>
         homeViewPagerAdapter = HomeViewPagerAdapter(this, tabItems)
@@ -60,8 +61,9 @@ class BottomNavigationItemFragment : Fragment() {
         binding?.pager?.isUserInputEnabled = false
 
         //add viewpager to tab layout
-        binding?.tabLayout?.let { binding?.pager?.let { it1 ->
-            TabLayoutMediator(it, it1) { tab, position ->
+        binding?.tabLayout?.let {
+            binding?.pager?.let { it1 ->
+                TabLayoutMediator(it, it1) { tab, position ->
                     tab.text = tabItems[position].title
                 }.attach()
             }
@@ -73,8 +75,6 @@ class BottomNavigationItemFragment : Fragment() {
         } else {
             binding!!.tabLayout.tabMode = TabLayout.MODE_SCROLLABLE
         }
-
-
     }
 
     private fun getTabItems(): TabItemModel {
@@ -92,7 +92,6 @@ class BottomNavigationItemFragment : Fragment() {
     }
 
     companion object {
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(bottomNavigationSelected: String) =
             BottomNavigationItemFragment().apply {

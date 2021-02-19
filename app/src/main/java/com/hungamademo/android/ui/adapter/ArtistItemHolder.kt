@@ -6,12 +6,9 @@ import com.bumptech.glide.Glide
 import com.hungamademo.android.R
 import com.hungamademo.android.base.BaseBucketItemHolder
 import com.hungamademo.android.databinding.LayoutArtistItemBinding
-import com.hungamademo.android.databinding.LayoutListItemBinding
-import com.hungamademo.android.databinding.LayoutMusicItemBinding
-import com.hungamademo.android.databinding.LayoutSongItemBinding
 import com.hungamademo.android.model.BucketContent
 
-class ArtistItemHolder(var binding: LayoutArtistItemBinding, var context : Context) :
+class ArtistItemHolder(var binding: LayoutArtistItemBinding, var context: Context) :
     BaseBucketItemHolder(binding) {
 
     override fun bind(bucketContent: BucketContent) {
@@ -30,6 +27,8 @@ class ArtistItemHolder(var binding: LayoutArtistItemBinding, var context : Conte
             binding.tvBucketArtistSubTitle.visibility = View.GONE
         }
 
-        Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_artist)).circleCrop().placeholder(context.resources.getDrawable(R.drawable.ic_launcher_background)).centerCrop().into(binding.ivBucketArtistImage)
+        Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_artist))
+            .circleCrop().placeholder(context.resources.getDrawable(R.drawable.dummy)).centerCrop()
+            .into(binding.ivBucketArtistImage)
     }
 }

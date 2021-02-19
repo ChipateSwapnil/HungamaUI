@@ -12,7 +12,7 @@
     <!-- Toolbar search-->
     <dimen name="toolbar_search_corner">5dp</dimen>
     <dimen name="toolbar_icon_size">30dp</dimen>
-    <dimen name="toolbar_padding">10dp</dimen>
+    <dimen name="toolbar_padding">15dp</dimen>
     <dimen name="toolbar_search_side_margin">10dp</dimen>
 
     <!--Bucket item-->
