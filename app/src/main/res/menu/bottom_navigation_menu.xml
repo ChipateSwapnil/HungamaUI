@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/page_discover"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_discover"
+        android:title="@string/menu_label_discover" />
+    <item
+        android:id="@+id/page_music"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_music"
+        android:title="@string/menu_label_music"/>
+    <item
+        android:id="@+id/page_video"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_video"
+        android:title="@string/menu_label_video"/>
+    <item
+        android:id="@+id/page_news"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_news"
+        android:title="@string/menu_label_news"/>
+    <item
+        android:id="@+id/page_library"
+        android:enabled="true"
+        android:icon="@drawable/ic_menu_library"
+        android:title="@string/menu_label_library"/>
+</menu>

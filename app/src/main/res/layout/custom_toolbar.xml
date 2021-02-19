@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/toolbar_padding"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/ivToolbarAccount"
+        android:layout_width="@dimen/toolbar_icon_size"
+        android:layout_height="@dimen/toolbar_icon_size"
+        android:src="@drawable/ic_toolbar_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/toolbar_search_side_margin"
+        android:layout_marginRight="@dimen/toolbar_search_side_margin"
+        android:background="@drawable/rounded_edittextview_background"
+        android:drawableLeft="@drawable/ic_toolbar_search"
+        android:drawableRight="@drawable/ic_toolbar_search_mic"
+        android:padding="5dp"
+        android:hint="Search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivToolbarNotification"
+        app:layout_constraintStart_toEndOf="@id/ivToolbarAccount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/ivToolbarNotification"
+        android:layout_width="@dimen/toolbar_icon_size"
+        android:layout_height="@dimen/toolbar_icon_size"
+        android:src="@drawable/ic_toolbar_notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

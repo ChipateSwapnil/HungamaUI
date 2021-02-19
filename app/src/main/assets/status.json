@@ -1,0 +1,42 @@
+{
+	"code": 200,
+	"message": "Success ",
+	"data": {
+		"id": 501,
+		"title": "",
+		"subtitle": "",
+		"showmore": false,
+		"type": 9,
+		"contents": [{
+			"id": 50101,
+			"title": "Real SSK",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 50102,
+			"title": "Aysuhman K",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 50103,
+			"title": "Honey Singh",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 50104,
+			"title": "Badshah",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 50105,
+			"title": "Neha",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 50106,
+			"title": "Jubin",
+			"subtitle": "",
+			"image": "https://google.com"
+		}]
+	}
+}

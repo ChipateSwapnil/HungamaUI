@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bucket_music_card_padding">
+
+        <ImageView
+            android:id="@+id/ivBucketCollectionImage"
+            android:layout_width="@dimen/bucket_collection_image_size"
+            android:layout_height="@dimen/bucket_collection_image_size"
+            app:layout_constraintBottom_toTopOf="@id/tvBucketCollectionTitle"
+            app:layout_constraintCircleRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBucketCollectionTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/medium_text"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/ivBucketCollectionImage"
+            app:layout_constraintTop_toBottomOf="@id/ivBucketCollectionImage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

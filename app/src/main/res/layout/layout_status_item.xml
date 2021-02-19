@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBucketStatusImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bucket_status_card_padding"
+        app:layout_constraintBottom_toTopOf="@id/tvBucketStatusTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="35dp">
+
+        <ImageView
+            android:id="@+id/ivBucketStatusImage"
+            android:layout_width="@dimen/bucket_status_image_size"
+            android:layout_height="@dimen/bucket_status_image_size"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvBucketStatusTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/x_small_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/cvBucketStatusImage"
+        app:layout_constraintTop_toBottomOf="@id/cvBucketStatusImage"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvBucketTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Good Morning"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/bucket_title_text_size"
+        app:layout_constraintEnd_toStartOf="@id/ivBucketShowMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvBucketSubTitle"/>
+
+    <TextView
+        android:id="@+id/tvBucketSubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:text="Pick from  wher"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/bucket_subtitle_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/rvBucketItems"
+        app:layout_constraintStart_toStartOf="@id/tvBucketTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvBucketTitle" />
+
+    <ImageView
+        android:id="@+id/ivBucketShowMore"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="@dimen/bucket_margin_top"
+        android:src="@drawable/ic_show_more"
+        app:layout_constraintBottom_toBottomOf="@id/tvBucketTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvBucketTitle"
+        app:layout_constraintTop_toTopOf="@id/tvBucketTitle" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBucketItems"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="never"
+        app:layout_constraintStart_toStartOf="@id/tvBucketTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvBucketSubTitle" />
+
+    <View
+        android:id="@+id/viewStatusDivide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvBucketItems" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

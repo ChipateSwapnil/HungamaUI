@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HungamaDemo</string>
+
+    <!--Bottom Navigation Menu Items-->
+    <string name="menu_label_discover">Discover</string>
+    <string name="menu_label_music">Music</string>
+    <string name="menu_label_video">Video</string>
+    <string name="menu_label_news">News</string>
+    <string name="menu_label_library">Library</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
