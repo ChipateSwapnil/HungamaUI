@@ -27,7 +27,7 @@ class StatusItemHolder(var binding: LayoutStatusItemBinding, var context: Contex
             .centerCrop().into(binding.ivBucketStatusImage)
 
         binding.clMainStatus.setOnClickListener(View.OnClickListener {
-            ToastUtil.showShortToast(context,"$title is clicked")
+//            ToastUtil.showShortToast(context,"$title is clicked")
         })
     }
 }

@@ -33,7 +33,7 @@ class SongItemHolder(var binding: LayoutSongItemBinding, var context: Context) :
             .into(binding.ivBucketSongImage)
 
         binding.clMainSong.setOnClickListener(View.OnClickListener {
-            ToastUtil.showShortToast(context,"$title is clicked")
+//            ToastUtil.showShortToast(context,"$title is clicked")
         })
     }
 }

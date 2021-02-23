@@ -33,7 +33,7 @@ class RectangularMusicItemHolder(
         }
 
         binding.clMainRectMusic.setOnClickListener(View.OnClickListener {
-            ToastUtil.showShortToast(context, "$title is clicked")
+//            ToastUtil.showShortToast(context, "$title is clicked")
         })
     }
 }

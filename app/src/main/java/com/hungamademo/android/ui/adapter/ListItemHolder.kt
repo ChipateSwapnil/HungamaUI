@@ -32,7 +32,7 @@ class ListItemHolder(var binding: LayoutListItemBinding, var context: Context) :
         }
 
         binding.cvMainList.setOnClickListener(View.OnClickListener {
-            ToastUtil.showShortToast(context,"$title is clicked")
+//            ToastUtil.showShortToast(context,"$title is clicked")
         })
     }
 }

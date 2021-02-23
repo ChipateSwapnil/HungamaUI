@@ -33,7 +33,7 @@ class MovieItemHolder(var binding: LayoutMovieItemBinding, var context: Context)
             .centerCrop().into(binding.ivBucketMovieImage)
 
         binding.clMainMovie.setOnClickListener(View.OnClickListener {
-                ToastUtil.showShortToast(context,"$title is clicked")
+//                ToastUtil.showShortToast(context,"$title is clicked")
         })
     }
 }

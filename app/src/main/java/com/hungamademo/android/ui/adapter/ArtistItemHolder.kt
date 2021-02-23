@@ -33,7 +33,7 @@ class ArtistItemHolder(var binding: LayoutArtistItemBinding, var context: Contex
             .into(binding.ivBucketArtistImage)
 
         binding.clMainArtist.setOnClickListener(View.OnClickListener {
-            ToastUtil.showShortToast(context, "$title is clicked")
+//            ToastUtil.showShortToast(context, "$title is clicked")
         })
     }
 }

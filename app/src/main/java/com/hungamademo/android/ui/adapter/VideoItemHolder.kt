@@ -33,7 +33,7 @@ class VideoItemHolder(var binding: LayoutVideoItemBinding, var context: Context)
             .into(binding.ivBucketVideoImage)
 
         binding.clMainVideo.setOnClickListener(View.OnClickListener {
-            ToastUtil.showShortToast(context,"$title is clicked")
+//            ToastUtil.showShortToast(context,"$title is clicked")
         })
     }
 }

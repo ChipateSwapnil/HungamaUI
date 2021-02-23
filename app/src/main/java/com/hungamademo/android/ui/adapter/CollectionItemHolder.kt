@@ -26,7 +26,7 @@ class CollectionItemHolder(var binding: LayoutCollectionItemBinding, var context
             .centerCrop().into(binding.ivBucketCollectionImage)
 
         binding.clCollection.setOnClickListener(View.OnClickListener {
-            ToastUtil.showShortToast(context, "$title is clicked")
+//            ToastUtil.showShortToast(context, "$title is clicked")
         })
     }
 }
