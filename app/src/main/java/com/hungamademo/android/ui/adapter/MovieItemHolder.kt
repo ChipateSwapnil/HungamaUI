@@ -7,6 +7,7 @@ import com.hungamademo.android.R
 import com.hungamademo.android.base.BaseBucketItemHolder
 import com.hungamademo.android.databinding.LayoutMovieItemBinding
 import com.hungamademo.android.model.BucketContent
+import com.hungamademo.android.utils.ToastUtil
 
 class MovieItemHolder(var binding: LayoutMovieItemBinding, var context: Context) :
     BaseBucketItemHolder(binding) {
@@ -30,5 +31,9 @@ class MovieItemHolder(var binding: LayoutMovieItemBinding, var context: Context)
         Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_movie))
             .placeholder(context.resources.getDrawable(R.drawable.dummy))
             .centerCrop().into(binding.ivBucketMovieImage)
+
+        binding.clMainMovie.setOnClickListener(View.OnClickListener {
+                ToastUtil.showShortToast(context,"$title is clicked")
+        })
     }
 }

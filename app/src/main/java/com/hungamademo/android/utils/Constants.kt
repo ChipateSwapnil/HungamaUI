@@ -14,5 +14,6 @@ class Constants {
         val ITEM_TYPE_SONGS = 17
         val ITEM_TYPE_ARTIST = 18
         val ITEM_TYPE_MOVIE = 19
+        val ITEM_TYPE_RECT_MUSIC = 20
     }
 }

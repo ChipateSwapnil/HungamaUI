@@ -7,6 +7,7 @@ import com.hungamademo.android.R
 import com.hungamademo.android.base.BaseBucketItemHolder
 import com.hungamademo.android.databinding.LayoutCollectionItemBinding
 import com.hungamademo.android.model.BucketContent
+import com.hungamademo.android.utils.ToastUtil
 
 class CollectionItemHolder(var binding: LayoutCollectionItemBinding, var context: Context) :
     BaseBucketItemHolder(binding) {
@@ -23,5 +24,9 @@ class CollectionItemHolder(var binding: LayoutCollectionItemBinding, var context
         Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_collection))
             .placeholder(context.resources.getDrawable(R.drawable.dummy))
             .centerCrop().into(binding.ivBucketCollectionImage)
+
+        binding.clCollection.setOnClickListener(View.OnClickListener {
+            ToastUtil.showShortToast(context, "$title is clicked")
+        })
     }
 }

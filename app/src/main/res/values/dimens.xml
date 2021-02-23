@@ -36,6 +36,10 @@
     <dimen name="bucket_music_image_size">120dp</dimen>
     <dimen name="bucket_music_card_padding">5dp</dimen>
 
+    <!--Rectangular Music Bucket item-->
+    <dimen name="bucket_rect_music_image_width">150dp</dimen>
+    <dimen name="bucket_rect_music_image_height">50dp</dimen>
+
     <!--Collection Bucket item-->
     <dimen name="bucket_collection_image_size">170dp</dimen>
     <dimen name="bucket_collection_card_padding">5dp</dimen>

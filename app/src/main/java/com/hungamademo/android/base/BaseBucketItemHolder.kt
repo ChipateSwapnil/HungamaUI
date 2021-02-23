@@ -14,7 +14,7 @@ abstract class BaseBucketItemHolder(viewBinding: ViewBinding) :
     open fun bind(bucketContent: BucketContent) {
         title = bucketContent.title
         subTitle = bucketContent.subtitle
-        imageURL = bucketContent.title
+        imageURL = bucketContent.image
         id = bucketContent.id
     }
 }

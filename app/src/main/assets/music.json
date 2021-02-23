@@ -1,0 +1,367 @@
+{
+	"code": 200,
+	"message": "Success ",
+	"data": [{
+		"id": 301,
+		"title": "My Favorites and Downloads",
+		"subtitle": "",
+		"showmore": true,
+		"type": 12,
+		"contents": [{
+			"id": 30101,
+			"title": "D/F Playlist",
+			"subtitle": "Hungama User",
+			"image": "https://google.com"
+		}, {
+			"id": 30102,
+			"title": "D/F Album",
+			"subtitle": "Jubin",
+			"image": "https://google.com"
+		}, {
+			"id": 30103,
+			"title": "Most Played D/F",
+			"subtitle": "Arjit",
+			"image": "https://google.com"
+		}, {
+			"id": 30104,
+			"title": "Most Played D/F",
+			"subtitle": "Arjit",
+			"image": "https://google.com"
+		}, {
+			"id": 30105,
+			"title": "D/F Podcast",
+			"subtitle": "Hungama User",
+			"image": "https://google.com"
+		}, {
+			"id": 30106,
+			"title": "Favorite Radio",
+			"subtitle": "Mick",
+			"image": "https://google.com"
+		}, {
+			"id": 30107,
+			"title": "Favorite Artist",
+			"subtitle": "Mick",
+			"image": "https://google.com"
+		}, {
+			"id": 30108,
+			"title": "Most Played D/F",
+			"subtitle": "Mick",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 302,
+		"title": "Recommended For You",
+		"subtitle": "",
+		"showmore": true,
+		"type": 11,
+		"contents": [{
+			"id": 30201,
+			"title": "Clickable Playlist",
+			"subtitle": "Jhon",
+			"image": "https://google.com"
+		}, {
+			"id": 30202,
+			"title": "Playlist/Album",
+			"subtitle": "Mick",
+			"image": "https://google.com"
+		}, {
+			"id": 30203,
+			"title": "Playlist/Album",
+			"subtitle": "Bryat",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 303,
+		"title": "Morning Radios",
+		"subtitle": "",
+		"showmore": true,
+		"type": 11,
+		"contents": [{
+			"id": 30301,
+			"title": "Radio",
+			"subtitle": "Best of India Pop",
+			"image": "https://google.com"
+		}, {
+			"id": 30302,
+			"title": "Radio",
+			"subtitle": "Best of Bollywood",
+			"image": "https://google.com"
+		}, {
+			"id": 30303,
+			"title": "Radio",
+			"subtitle": "Hot New Bollywood",
+			"image": "https://google.com"
+		}, {
+			"id": 30304,
+			"title": "Radio",
+			"subtitle": "Hot New International",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 304,
+		"title": "Trending Today",
+		"subtitle": "",
+		"showmore": true,
+		"type": 14,
+		"contents": [{
+			"id": 30401,
+			"title": "Lut Gaye",
+			"subtitle": "Jubin Nautiyal",
+			"image": "https://google.com"
+		}, {
+			"id": 30402,
+			"title": "Ashleel",
+			"subtitle": "Arjit Singh",
+			"image": "https://google.com"
+		}, {
+			"id": 30403,
+			"title": "Main Jis Din Bhulaa Du",
+			"subtitle": "Neha Kakar",
+			"image": "https://google.com"
+		}, {
+			"id": 30404,
+			"title": "Sona Lagada",
+			"subtitle": "Armaan Malik",
+			"image": "https://google.com"
+		}, {
+			"id": 30405,
+			"title": "Lut Gaye",
+			"subtitle": "Jubin Nautiyal",
+			"image": "https://google.com"
+		}, {
+			"id": 30406,
+			"title": "Ashleel",
+			"subtitle": "Arjit Singh",
+			"image": "https://google.com"
+		}, {
+			"id": 30407,
+			"title": "Main Jis Din Bhulaa Du",
+			"subtitle": "Neha Kakar",
+			"image": "https://google.com"
+		}, {
+			"id": 30408,
+			"title": "Sona Lagada",
+			"subtitle": "Armaan Malik",
+			"image": "https://google.com"
+		}, {
+			"id": 30409,
+			"title": "Main Jis Din Bhulaa Du",
+			"subtitle": "Neha Kakar",
+			"image": "https://google.com"
+		}, {
+			"id": 304010,
+			"title": "Sona Lagada",
+			"subtitle": "Armaan Malik",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 305,
+		"title": "Mood and Genre",
+		"subtitle": "",
+		"showmore": true,
+		"type": 20,
+		"contents": [{
+			"id": 30501,
+			"title": "Relax",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 30502,
+			"title": "Hip-Hop",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 30503,
+			"title": "Workout",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 30504,
+			"title": "Rock",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 30505,
+			"title": "Travel",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 30506,
+			"title": "Focus",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 30507,
+			"title": "Energy Booster",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 30508,
+			"title": "Pop",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 30509,
+			"title": "Romance",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 305010,
+			"title": "EDM",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 305011,
+			"title": "2000s",
+			"subtitle": "",
+			"image": "https://google.com"
+		}, {
+			"id": 305012,
+			"title": "Feel Good",
+			"subtitle": "",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 306,
+		"title": "Artist Similar to (User's fav)",
+		"subtitle": "",
+		"showmore": true,
+		"type": 18,
+		"contents": [{
+			"id": 30601,
+			"title": "Jubin Nautiyal",
+			"subtitle": "10M Followers",
+			"image": "https://google.com"
+		}, {
+			"id": 30602,
+			"title": "Arjit Singh",
+			"subtitle": "11M Followers",
+			"image": "https://google.com"
+		}, {
+			"id": 30603,
+			"title": "Neha Kakar",
+			"subtitle": "12M Followers",
+			"image": "https://google.com"
+		}, {
+			"id": 30604,
+			"title": "Armaam Malik",
+			"subtitle": "13M Followers",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 307,
+		"title": "Podcast (Fav Category)",
+		"subtitle": "",
+		"showmore": true,
+		"type": 11,
+		"contents": [{
+			"id": 30701,
+			"title": "Podcast",
+			"subtitle": "Howzzat",
+			"image": "https://google.com"
+		}, {
+			"id": 30702,
+			"title": "Podcast",
+			"subtitle": "Ramayan",
+			"image": "https://google.com"
+		}, {
+			"id": 30703,
+			"title": "Podcast",
+			"subtitle": "Smile with Sadhguru",
+			"image": "https://google.com"
+		}, {
+			"id": 30704,
+			"title": "Podcast",
+			"subtitle": "BongBaji",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 107,
+		"title": "Playlist(Fav Category)",
+		"subtitle": "",
+		"showmore": true,
+		"type": 11,
+		"contents": [{
+			"id": 10701,
+			"title": "Tazza Maal",
+			"subtitle": "Jubin Nautiyal",
+			"image": "https://google.com"
+		}, {
+			"id": 10702,
+			"title": "Happy Hits",
+			"subtitle": "Arjit Singh",
+			"image": "https://google.com"
+		}, {
+			"id": 10703,
+			"title": "Romance Remade",
+			"subtitle": "Neha Kakar",
+			"image": "https://google.com"
+		}, {
+			"id": 10704,
+			"title": "Just the weekend",
+			"subtitle": "Armaan Malik",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 309,
+		"title": "Songs Picked for You",
+		"subtitle": "",
+		"showmore": true,
+		"type": 17,
+		"contents": [{
+			"id": 30901,
+			"title": "Madhubala",
+			"subtitle": "Amit Trivedi",
+			"image": "https://google.com"
+		}, {
+			"id": 30902,
+			"title": "Ajnabi",
+			"subtitle": "Amit Trivedi",
+			"image": "https://google.com"
+		}, {
+			"id": 30903,
+			"title": "Chahal Gaya Chhalaa",
+			"subtitle": "Sukhwinder Singh",
+			"image": "https://google.com"
+		}, {
+			"id": 30904,
+			"title": "Matlabi Yariyan",
+			"subtitle": "Neha Kakar",
+			"image": "https://google.com"
+		}, {
+			"id": 30905,
+			"title": "Matlabi Yariyan",
+			"subtitle": "Neha Kakar",
+			"image": "https://google.com"
+		}]
+	}, {
+		"id": 202,
+		"title": "New Short Videos",
+		"subtitle": "",
+		"showmore": true,
+		"type": 15,
+		"contents": [{
+			"id": 20201,
+			"title": "Nayan",
+			"subtitle": "101k views",
+			"image": "https://google.com"
+		},
+			{
+				"id": 20202,
+				"title": "Mushkil Badi",
+				"subtitle": "111k views",
+				"image": "https://google.com"
+			}, {
+				"id": 20203,
+				"title": "Woh Chaand Ka..",
+				"subtitle": "131k views",
+				"image": "https://google.com"
+			}, {
+				"id": 20204,
+				"title": "Waada Hai",
+				"subtitle": "101k views",
+				"image": "https://google.com"
+			}
+		]
+	}]
+}

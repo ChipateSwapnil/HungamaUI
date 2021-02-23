@@ -7,6 +7,7 @@ import com.hungamademo.android.R
 import com.hungamademo.android.base.BaseBucketItemHolder
 import com.hungamademo.android.databinding.LayoutStatusItemBinding
 import com.hungamademo.android.model.BucketContent
+import com.hungamademo.android.utils.ToastUtil
 
 class StatusItemHolder(var binding: LayoutStatusItemBinding, var context: Context) :
     BaseBucketItemHolder(binding) {
@@ -24,5 +25,9 @@ class StatusItemHolder(var binding: LayoutStatusItemBinding, var context: Contex
             .circleCrop()
             .placeholder(context.resources.getDrawable(R.drawable.dummy))
             .centerCrop().into(binding.ivBucketStatusImage)
+
+        binding.clMainStatus.setOnClickListener(View.OnClickListener {
+            ToastUtil.showShortToast(context,"$title is clicked")
+        })
     }
 }

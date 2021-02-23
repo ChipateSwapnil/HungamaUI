@@ -72,7 +72,7 @@ class BucketHolder(var binding: LayoutMainRecylerviewItemBinding, var context: C
             Constants.ITEM_TYPE_SONGS -> {
                 getGridLayoutManager(5)
             }
-            Constants.ITEM_TYPE_LIST -> {
+            Constants.ITEM_TYPE_LIST , Constants.ITEM_TYPE_RECT_MUSIC-> {
                 getGridLayoutManager(3)
             }
             Constants.ITEM_TYPE_STATUS, Constants.ITEM_TYPE_MUSIC, Constants.ITEM_TYPE_COLLECTION, Constants.ITEM_TYPE_VIDEO, Constants.ITEM_TYPE_ARTIST -> {

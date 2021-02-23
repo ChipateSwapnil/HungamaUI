@@ -62,27 +62,32 @@ class CommonViewPagerItemFragment : Fragment() {
     }
 
     private fun initView() {
-        if ((bottomNavigationSelected.equals(BOTTOM_ITEM_DISCOVER) && tabSelected.equals("All")) || (bottomNavigationSelected.equals(
-                BOTTOM_ITEM_MUSIC
-            ) && tabSelected.equals("Charts"))
-        ) {
-            bucketViewModel?.getBucketData(requireContext())?.observe(this, Observer {
-                buckets = it
-                bucketAdapter =
-                    BucketAdapter(buckets.dataList as ArrayList<BucketData>, requireContext())
 
-                //set the RecyclerView for Buckets
-                binding.rvBuckets.layoutManager =
-                    LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-                binding.rvBuckets.adapter = bucketAdapter
+        bottomNavigationSelected?.let {
+            tabSelected?.let { it1 ->
+                bucketViewModel?.getBucketData(requireContext(), it, it1)
+                    ?.observe(this, Observer {
 
-                binding.tvTitle.visibility = View.GONE
-            })
-        } else {
-            val displaytext = "$bottomNavigationSelected : $tabSelected"
-            binding.tvTitle.text = displaytext
-            binding.tvTitle.visibility = View.VISIBLE
+                        if (it != null && it.dataList.isNotEmpty()) {
+                            buckets = it
+                            bucketAdapter =
+                                BucketAdapter(buckets.dataList as ArrayList<BucketData>, requireContext())
+
+                            //set the RecyclerView for Buckets
+                            binding.rvBuckets.layoutManager =
+                                LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+                            binding.rvBuckets.adapter = bucketAdapter
+
+                            binding.tvTitle.visibility = View.GONE
+                        } else {
+                            val displaytext = "$bottomNavigationSelected : $tabSelected"
+                            binding.tvTitle.text = displaytext
+                            binding.tvTitle.visibility = View.VISIBLE
+                        }
+                    })
+            }
         }
+
     }
 
     private fun getBuckets(): Bucket {

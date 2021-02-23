@@ -7,6 +7,7 @@ import com.hungamademo.android.R
 import com.hungamademo.android.base.BaseBucketItemHolder
 import com.hungamademo.android.databinding.LayoutMusicItemBinding
 import com.hungamademo.android.model.BucketContent
+import com.hungamademo.android.utils.ToastUtil
 
 class MusicItemHolder(var binding: LayoutMusicItemBinding, var context: Context) :
     BaseBucketItemHolder(binding) {
@@ -30,5 +31,10 @@ class MusicItemHolder(var binding: LayoutMusicItemBinding, var context: Context)
         Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_radio))
             .placeholder(context.resources.getDrawable(R.drawable.dummy)).centerCrop()
             .into(binding.ivBucketMusicImage)
+
+        binding.clMainMusic.setOnClickListener(View.OnClickListener {
+            ToastUtil.showShortToast(context,"$title is clicked")
+        })
+
     }
 }

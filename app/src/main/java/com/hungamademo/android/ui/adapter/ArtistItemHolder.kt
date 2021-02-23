@@ -7,6 +7,7 @@ import com.hungamademo.android.R
 import com.hungamademo.android.base.BaseBucketItemHolder
 import com.hungamademo.android.databinding.LayoutArtistItemBinding
 import com.hungamademo.android.model.BucketContent
+import com.hungamademo.android.utils.ToastUtil
 
 class ArtistItemHolder(var binding: LayoutArtistItemBinding, var context: Context) :
     BaseBucketItemHolder(binding) {
@@ -30,5 +31,9 @@ class ArtistItemHolder(var binding: LayoutArtistItemBinding, var context: Contex
         Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_artist))
             .circleCrop().placeholder(context.resources.getDrawable(R.drawable.dummy)).centerCrop()
             .into(binding.ivBucketArtistImage)
+
+        binding.clMainArtist.setOnClickListener(View.OnClickListener {
+            ToastUtil.showShortToast(context, "$title is clicked")
+        })
     }
 }

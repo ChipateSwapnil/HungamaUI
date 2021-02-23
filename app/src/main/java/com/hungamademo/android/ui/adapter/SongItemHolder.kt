@@ -7,6 +7,7 @@ import com.hungamademo.android.R
 import com.hungamademo.android.base.BaseBucketItemHolder
 import com.hungamademo.android.databinding.LayoutSongItemBinding
 import com.hungamademo.android.model.BucketContent
+import com.hungamademo.android.utils.ToastUtil
 
 class SongItemHolder(var binding: LayoutSongItemBinding, var context: Context) :
     BaseBucketItemHolder(binding) {
@@ -30,5 +31,9 @@ class SongItemHolder(var binding: LayoutSongItemBinding, var context: Context) :
         Glide.with(context).load(context.resources.getDrawable(R.drawable.dummy_songs))
             .placeholder(context.resources.getDrawable(R.drawable.dummy)).centerCrop()
             .into(binding.ivBucketSongImage)
+
+        binding.clMainSong.setOnClickListener(View.OnClickListener {
+            ToastUtil.showShortToast(context,"$title is clicked")
+        })
     }
 }

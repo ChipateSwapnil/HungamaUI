@@ -41,6 +41,14 @@ class BucketItemAdapter(
                 )
                 MusicItemHolder(binding, context)
             }
+            Constants.ITEM_TYPE_RECT_MUSIC -> {
+                val binding: LayoutRectangularMusicItemBinding = LayoutRectangularMusicItemBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+                RectangularMusicItemHolder(binding, context)
+            }
             Constants.ITEM_TYPE_COLLECTION -> {
                 val binding: LayoutCollectionItemBinding = LayoutCollectionItemBinding.inflate(
                     LayoutInflater.from(parent.context),
