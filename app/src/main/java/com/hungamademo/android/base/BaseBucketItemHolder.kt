@@ -2,7 +2,7 @@ package com.hungamademo.android.base
 
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.hungamademo.android.model.BucketContent
+import com.hungamademo.android.domain.model.BucketContent
 
 abstract class BaseBucketItemHolder(viewBinding: ViewBinding) :
     RecyclerView.ViewHolder(viewBinding.root) {

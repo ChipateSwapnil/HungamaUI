@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HungamaDemo">
         <activity
-            android:name=".ui.view.activity.MainActivity"
+            android:name=".presentation.view.activity.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             android:configChanges="keyboardHidden|orientation|screenSize">

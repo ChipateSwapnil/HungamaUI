@@ -23,7 +23,7 @@
             android:layout_width="@dimen/bucket_video_image_width"
             android:layout_height="@dimen/bucket_video_image_height" />
     </androidx.cardview.widget.CardView>
-
+b
         <TextView
             android:id="@+id/tvBucketVideoTitle"
             android:layout_width="0dp"
